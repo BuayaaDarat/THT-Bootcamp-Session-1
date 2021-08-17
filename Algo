@@ -1,0 +1,59 @@
+Ingin meminjam buku di perpustakaan,Buku yang ingin dipinjam terdapat di dalam 1 rak buku panjang yang memiliki total x buku didalam 1 rak buku tersebut,setiap baris dari rak tersebut ada 100 buku
+Approach pertama:Mencari buku tersebut dari buku peratama-akhir satu per satu O(n)
+Approach kedua:Mencari per 10 buku O(n/10)
+Approach kertiga:Mencari setiap baris dari raknya O(n/100)
+Approach keempat:Mencari dari tengah dan melihat buku tersebut berada di kiri atau kanan?log2(n)
+
+Pseudocode
+Approach 1
+Start
+Go to the bookshelf section
+Start searching the book
+If Bioliogy is on shelf
+Claim biology book
+Else
+Quit
+End
+
+
+Approach 2
+Start
+Go to the bookshelf section
+Start searching the book
+If Biology is on the shelf
+Claim Biology book
+Else if the biology book is on the next 10 books
+Go back to line 3
+Else
+Quit
+
+Approach 3
+Start
+Go to the bookshelf section
+Start searching the book
+If Biology is on the shelf
+Claim Biology book
+Else if the biology is on the next 100 books
+Go back to line 3
+Else
+Quit
+
+
+Approach 4
+Start
+Go to the bookshelf section
+Start searching the book
+If Biology is on the shelf
+Claim Biology book
+Else if the biology book on the left side of the shelf
+Search at the middle of the left side of the shelf
+Go back to line 3
+Else if the biology book is on the right side of the shelf
+Search at the middle of the right side of the shelf
+Go back to line 3
+Else
+Quit
+End
+
+
+
